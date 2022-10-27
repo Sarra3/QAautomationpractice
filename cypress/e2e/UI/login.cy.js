@@ -36,9 +36,9 @@ describe('Login tests', () => {
 
   });
 
-  // it('Invalid login', () => {
-  //   homePage.clickOnLogin()
-  //   loginPage.loginTo('sarr@gmail.com', '123123')
-  //   homePage.validationErrorMessageVisible()
-  // })
+  it('Invalid login', () => {
+    homePage.clickOnLogin()
+    loginPage.loginTo('sarr@gmail.com', '123123')
+    homePage.validationErrorMessageVisible()
+  })
 })
