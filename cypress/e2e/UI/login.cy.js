@@ -1,9 +1,9 @@
-import homePage from "../pages/homepage"
-import loginPage from "../pages/loginpage"
-import searchPage from "../pages/search"
-import advancedPage from "../pages/advence"
-import validationPage from "../pages/validation"
-import menusearchPage from "../pages/menusearch"
+import homePage from "../../pages/homepage"
+import loginPage from "../../pages/loginpage"
+import searchPage from "../../pages/search"
+import advancedPage from "../../pages/advence"
+import validationPage from "../../pages/validation"
+import menusearchPage from "../../pages/menusearch"
 
 describe('Login tests', () => {
   beforeEach(() => {
@@ -26,7 +26,7 @@ describe('Login tests', () => {
     validationPage.positiveValidation()
   });
 
-  it('advance search negative value ', function () {
+  it('advance search negative value ', ()  => {
     advancedPage.advancedSearch('5')
     validationPage.notFoundMessageValidation()
   });
