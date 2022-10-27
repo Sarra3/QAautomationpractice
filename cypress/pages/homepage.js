@@ -1,4 +1,4 @@
-const cypress = require("cypress");
+// const cypress = require("cypress");
 
 class HomePage {
 
@@ -14,9 +14,9 @@ class HomePage {
         this.elements.logout().should('be.visible')
     }
 
-    // validationErrorMessageVisible() {
-    //     this.elements.validationError().should('be.visible')
-    // }
+    validationErrorMessageVisible() {
+        this.elements.validationError().should('be.visible')
+    }
 
 
     elements = {
