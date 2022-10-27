@@ -5,6 +5,9 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    viewportHeight: 1024,
+    viewportWidth: 2080,
+    baseUrl: 'https://demo.nopcommerce.com/'
   },
 
 });

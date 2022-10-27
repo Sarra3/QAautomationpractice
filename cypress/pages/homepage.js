@@ -1,7 +1,9 @@
+const cypress = require("cypress");
+
 class HomePage {
 
     navigateTo() {
-        cy.visit('https://demo.nopcommerce.com/')
+        cy.visit(Cypress.config().baseUrl)
     }
 
     clickOnLogin() {
@@ -12,14 +14,9 @@ class HomePage {
         this.elements.logout().should('be.visible')
     }
 
-    searchItem(text) {
-        this.elements.searchItem().type(text).submit()
-        this.elements.searchButton().submit()
-    }
-
-    validationErrorMessageVisible() {
-        this.elements.validationError().should('be.visible')
-    }
+    // validationErrorMessageVisible() {
+    //     this.elements.validationError().should('be.visible')
+    // }
 
 
     elements = {
