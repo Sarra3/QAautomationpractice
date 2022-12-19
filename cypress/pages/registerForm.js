@@ -1,11 +1,11 @@
-class RegisterForm {
-    registerUser(){
+class registerForm {
+    registerUser(firstName, lastName, email, password, confirmationPassword){
         this.elements.registerButton().click()
-        this.elements.firstName().type('s')
-        this.elements.lastName().type('a')
-        this.elements.email().type('sa@gmail.com')
-        this.elements.password().type('12341234')
-        this.elements.confirmationPassword().type('12341234')
+        this.elements.firstName().type(firstName)
+        this.elements.lastName().type(lastName)
+        this.elements.email().type(email)
+        this.elements.password().type(password)
+        this.elements.confirmationPassword().type(confirmationPassword)
         this.elements.confirmationButton().click()
     }
 
@@ -22,4 +22,4 @@ class RegisterForm {
 
 }
 
-module.exports = new RegisterForm()
+module.exports = new registerForm()

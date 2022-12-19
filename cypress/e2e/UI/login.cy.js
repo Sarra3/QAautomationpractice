@@ -12,7 +12,7 @@ describe('Login tests', () => {
   })
 
   it('register', () =>{
-    registerForm.registerUser()
+    registerForm.registerUser('s', 's', 'sa@gmail.com', '12341234', '12341234')
   })
 
   it('Validate login', () => {
