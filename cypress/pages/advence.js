@@ -25,4 +25,5 @@ class AdvancedSearch {
 }
 
 
-module.exports = new AdvancedSearch()
+module.exports = new AdvancedSearch();
+

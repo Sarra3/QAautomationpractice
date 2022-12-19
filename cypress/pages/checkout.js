@@ -9,4 +9,4 @@ class checkout{
     }
 }
 
-module.exports = new checkout()
+module.exports = new checkout();

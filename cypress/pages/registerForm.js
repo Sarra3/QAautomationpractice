@@ -22,4 +22,4 @@ class registerForm {
 
 }
 
-module.exports = new registerForm()
+module.exports = new registerForm();

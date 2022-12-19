@@ -18,4 +18,4 @@ class Search{
     }
 }
 
-module.exports = new Search()
+module.exports = new Search();

@@ -17,4 +17,4 @@ class menuSearch{
 
 }
 
-module.exports = new menuSearch()
+module.exports = new menuSearch();
