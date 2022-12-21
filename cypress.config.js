@@ -7,7 +7,7 @@ module.exports = defineConfig({
     },
     viewportHeight: 1024,
     viewportWidth: 2080,
-    baseUrl: 'https://demo.nopcommerce.com/'
+    baseUrl: 'https://demo.nopcommerce.com/',
   },
 
 });
