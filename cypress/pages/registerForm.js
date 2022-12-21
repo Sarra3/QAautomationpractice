@@ -1,5 +1,5 @@
 class registerForm {
-    registerUser(firstName, lastName, email, password, confirmationPassword){
+    registerUser(firstName, lastName, email, password, confirmationPassword,){
         this.elements.registerButton().click()
         this.elements.firstName().type(firstName)
         this.elements.lastName().type(lastName)
