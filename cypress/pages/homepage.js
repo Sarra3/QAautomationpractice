@@ -1,5 +1,4 @@
 // const cypress = require("cypress");
-
 class HomePage {
 
     navigateTo() {

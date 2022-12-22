@@ -1,32 +1,17 @@
+import homePage from '../../pages/homepage'
 import booksPage from '../../pages/booksCategoryNav'
 import checkout from '../../pages/checkout'
-import homePage from '../../pages/homepage'
-import registerForm from "../../pages/registerForm";
-import loginPage from "../../pages/loginpage";
 
-describe('create and login user', () =>{
-            beforeEach(() => {
-                    homePage.navigateTo()
-                }
-            )
 
-            it('register', () => {
-                 registerForm.registerUser('s', 's', 'sa@gmail.com', '12341234','12341234')
-            })
+describe('select Books category ',() =>{
+    beforeEach(() =>{
+        homePage.navigateTo()
     })
-
-describe('Login', () =>{
-    it('Validate login', () => {
-        homePage.clickOnLogin()
-        loginPage.loginTo('sa@gmail.com', '12341234')
-        homePage.validateLogoutIsVisible()
-    })
-})
 
 
 describe('select Books category ',() =>{
     it('select Books category',  () => {
-        booksPage.booksCategory()
+            booksPage.booksCategory()
     });
 })
 
@@ -43,3 +28,10 @@ describe('add to card',() =>{
     });
 })
 
+d
+escribe('go to shopping cart', () =>{
+    it('go to shopping cart ',  () => {
+        cy.wait(3000)
+        checkout.goToShoppingCart()
+    });
+})
