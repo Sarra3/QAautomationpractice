@@ -9,7 +9,7 @@ class checkout{
         this.elements.setQuantity().clear().type('2')
         this.elements.updateShoppingCart().click()
     }
-
+      
 
     elements = {
         addToCard: () => cy.get('#add-to-cart-button-38.button-1.add-to-cart-button'),

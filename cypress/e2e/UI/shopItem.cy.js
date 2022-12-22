@@ -8,6 +8,8 @@ describe('select Books category ',() =>{
         homePage.navigateTo()
     })
 
+
+describe('select Books category ',() =>{
     it('select Books category',  () => {
             booksPage.booksCategory()
     });
@@ -26,10 +28,10 @@ describe('add to card',() =>{
     });
 })
 
-describe('go to shopping cart', () =>{
+d
+escribe('go to shopping cart', () =>{
     it('go to shopping cart ',  () => {
         cy.wait(3000)
         checkout.goToShoppingCart()
     });
 })
-
