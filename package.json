@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "chromeWebSecurity": "false",
   "scripts": {
     "cy:open": "cypress open"
   },

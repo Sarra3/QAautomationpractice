@@ -3,8 +3,6 @@
 class booksCategoryNav{
     booksCategory(){
         this.elements.books().click()
-        // cy.get('.button-2.product-box-add-to-cart-button').click({multiple: true})
-
     }
 
     selectBook(){
