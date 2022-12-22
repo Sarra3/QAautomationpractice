@@ -3,16 +3,16 @@ import loginPage from "../../pages/loginpage"
 import searchPage from "../../pages/search"
 import advancedPage from "../../pages/advence"
 import menuSearchPage from "../../pages/menusearch"
-// import registerForm from "../../pages/registerForm";
+import registerForm from "../../pages/registerForm";
 
 describe('create User, Login', () =>{
   describe('navigate to home page', () => {
     beforeEach(() => {
       homePage.navigateTo()
     })
-    // it('register', () => {
-    //   registerForm.registerUser('s', 's', 'sa@gmail.com', '12341234', '12341234')
-    // })
+    it('register', () => {
+      registerForm.registerUser('s', 's', 'sa@gmail.com', '12341234', '12341234')
+    })
 
     it('Validate login', () => {
       homePage.clickOnLogin()
